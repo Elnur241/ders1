@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .btn {
+            border: 1px solid white;
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .btn::before {
+            content: "  ";
+            psoition: absolute;
+            weight: 0;
+            border-style: solid;
+            border-width: 20px 20px 0 0;
+            border-color: solid red;
+
+
+        }
+
+        .btn::after {
+            psoition: absolute;
+            weight: 0;
+            border-style: solid;
+            border-width: 20px 20px 0 0;
+            border-color: solid red;
+
+        }
+
+
+        .lt {
+            border: 1px solid red;
+            padding: 5px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <span class=.btn::after></span>
+        <span clas=></span>
+        <a href="#" margin="20px">soz</a>
+    </div>
+
+</body>
+
+</html>
